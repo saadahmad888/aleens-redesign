@@ -1,0 +1,21 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --text: #454545;
+   --orange: #F7941D;
+   --orange-light: #F8A33D;
+   --orange-dark: #D37E18;
+   --green: #00A651;
+   --green-light: #24B269;
+   --green-dark: #00A651;
+   --green-bright: #00A615;
+   --blue: #61ABFC;
+   --blue-light: #77B7FC;
+   --blue-dark: #5392D8;
+   --blue-bright: #248BFC;
+   --light-text: #989898;
+   --purple: #B068AA;
+   --heading-text: #152f2e;
+   --sky: #9fd9e7;
+   --gradient-one: linear-gradient(124deg, rgba(247,148,29,1) 0%, rgba(255,198,130,1) 100%);
+}

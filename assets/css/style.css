@@ -1,0 +1,916 @@
+@import url("./variables.css");
+
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: "Open Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Raleway", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'Mova'; /* Name your custom font */
+    src: url('../fonts/Mova.otf') format('opentype'), /* Specify font file paths and formats */
+         url('../fonts/Mova.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Mirosa'; /* Name your custom font */
+    src: url('../fonts/Mirosa-Regular.otf') format('opentype'), /* Specify font file paths and formats */
+         url('../fonts/Mirosa-Regular.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Gloroius'; /* Name your custom font */
+    src: url('../fonts/glorious-nrmgv.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Zefani'; /* Name your custom font */
+    src: url('../fonts/Zefani_Uppercase_Demo-Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Aldith'; /* Name your custom font */
+    src: url('../fonts/ALDITHDEMOGrunge.ttf') format('truetype'),
+    url('../fonts/ALDITHDEMOItalic.ttf') format('truetype'),
+    url('../fonts/ALDITHDEMORegular.ttf') format('truetype'),
+    url('../fonts/ALDITHDEMOScript.ttf') format('truetype'); 
+}
+
+
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+p{
+    font-family: "Raleway", sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+
+
+/* =======================================================================
+    Buttons CSS
+========================================================================== */
+
+
+
+/* =======================================================================
+    General Common CSS
+========================================================================== */
+.section-heading{
+    position: relative;
+    margin-bottom: 50px;
+}
+.section-heading h2{
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* font-family: 'Mova'; */
+    /* font-family: 'Gloroius'; */
+    
+    /* font-family: 'Mova'; */
+    font-family: 'Mirosa';
+    /* font-family: 'Gloroius'; */
+    /* font-family: 'Zefani'; */
+    /* font-family: 'Aldith';  */
+}
+.section-heading .line{
+    background: rgb(247,148,29);
+    background: linear-gradient(90deg, rgba(247,148,29,1) 0%, rgba(248,163,61,1) 51%, rgba(247,148,29,0.006214985994397737) 100%);
+    width: 150px;
+    height: 4px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.section-heading p{
+    color: var(--light-text);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.color-orange{
+    color: var(--orange);
+}
+
+
+/* Owl Dots Desing */
+.owl-theme .owl-dots .owl-dot span{
+    transition: 0.3s all ease;
+    background-color: var(--green);
+    position: relative;
+    top: -4px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    position: relative;
+    top: 0;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--orange);
+    transform: rotate(-45deg);
+}
+
+/* =======================================================================
+    Navbar CSS
+========================================================================== */
+.top-header{
+    /* background-color:   ; */
+    padding: 25px 0;
+}
+.top-header .logo-box{
+    position: relative;
+    width: fit-content;
+}
+.top-header .logo-box img{
+    width: 160px;
+}
+.top-header .logo-box small{
+    color: var(--green);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+}
+.top-header .contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.top-header .contact-box .mail-box{
+    margin-right: 50px;
+}
+.top-header .contact-box .mail-box a {
+    color: var(--heading-text);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.top-header .contact-box .mail-box a:hover{
+    color: var(--orange);
+}
+.top-header .contact-box .mail-box a i{
+    color: var(--orange);
+    font-size: 30px;
+    margin-right: 10px;
+}
+.top-header .contact-box .phone-box a {
+    color: var(--heading-text);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.top-header .contact-box .phone-box a:hover{
+    color: var(--orange);
+}
+.top-header .contact-box .phone-box a i{
+    color: var(--orange);
+    font-size: 30px;
+    margin-right: 10px;
+}
+.main-header{
+    padding: 30px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main-header .header-link-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.main-header .header-link-box ul li{
+    margin-right: 30px;
+}
+.main-header .header-link-box ul li a{
+    position: relative;
+    color: var(--heading-text);
+}
+.main-header .header-link-box ul li a:hover{
+    color: var(--orange);
+}
+.main-header .header-link-box ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: var(--orange);
+    height: 1px;
+    width: 0;
+    transition: 0.75s;
+}
+.main-header .header-link-box ul li a:hover::before{
+    width: 100%;
+}
+
+.main-header .header-button-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.main-header .header-button-box ul li{
+    margin-left: 30px;
+}
+.main-header .header-button-box ul .button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.main-header .header-button-box ul .button:hover {
+    background-color: var(--orange);
+    box-shadow: 0px 15px 20px rgba(248, 164, 61, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.main-header .header-button-box ul .button:active {
+    transform: translateY(-1px);
+}
+.mobile-header{
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.mobile-header .logo-box img{
+    width: 130px;
+}
+.mobile-header .link-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.mobile-header .link-box a{
+    border: 2px solid var(--light-text);
+    color: var(--heading-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.mobile-header .link-box a i{
+    font-weight: 500;
+}
+
+/* =======================================================================
+    Main Banner  CSS
+========================================================================== */
+.main-banner-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+.main-banner-item h1{
+    color: var(--white);
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 100px;
+    margin-bottom: 20px;
+    /* font-family: 'Mova'; */
+    /* font-family: 'Mirosa'; */
+    /* font-family: 'Gloroius'; */
+    /* font-family: 'Zefani'; */
+    /* font-family: 'Aldith';  */
+}
+.main-banner-item h1 span{
+    color: var(--orange);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 0px 20px;
+    /* font-family: 'Mirosa'; */
+}
+.main-banner-item .desc{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.banner-card-box{
+    position: relative;
+    z-index: 2;
+}
+.banner-card{
+    /* background-color: var(--orange-light); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('data:image/jpeg;base64,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');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.banner-card.one{
+    background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6280637254901961) 34%, rgba(0,0,0,1) 100%), url('../images/1.png');
+}
+.banner-card.two{
+    background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6280637254901961) 34%, rgba(0,0,0,1) 100%), url('../images/2.png');
+}
+.banner-card .content-box{
+    width: 80%;
+}
+.banner-card .title{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner-card .desc{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.banner-card a{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.svg-curve{
+    position: absolute;
+    bottom: -10px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* =======================================================================
+    How it Works CSS
+========================================================================== */
+.how-it-works-sec{
+    padding: 70px 0 70px 0;
+}
+.how-it-works-item{
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 32px;
+    padding: 20px 20px;
+    transition: 0.3s all ease;
+    margin-bottom: 30px;
+}
+.how-it-works-item:hover{
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.how-it-works-item .icon-box{
+    margin-bottom: 10px;
+}
+.how-it-works-item .icon-box lord-icon{
+    transition: 0.3s all ease;
+}
+.how-it-works-item:hover .icon-box lord-icon{
+    transform: scale(1.2);
+}
+.how-it-works-item .content-box{
+    position: relative;
+}
+.how-it-works-item .content-box .title{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+.how-it-works-item .content-box .desc{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+
+
+/* =======================================================================
+    Meal Plan Section CSS
+========================================================================== */
+.meal-plan-sec{
+    padding: 100px 0 70px 0;
+}
+.meal-plan-item{
+    position: relative;
+    text-align: center;
+    padding: 0 0px 10px 0px;
+    margin-bottom: 20px;
+}
+.meal-plan-item:hover{
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: rgba(189, 189, 189, 0.1) 0px 4px 12px;
+}
+.meal-plan-item .img-box{
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.meal-plan-item .img-box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+}
+.meal-plan-item:hover .img-box{
+    border-radius: 20px 20px 0 0;
+}
+.meal-plan-item:hover .img-box img{
+    transform: scale(1.2);
+    border-radius: 20px 20px 0 0;
+}
+.meal-plan-item .content-box{
+    position: relative;
+}
+.meal-plan-item .content-box .title{
+    color: var(--heading-text);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.meal-plan-item .content-box .price{
+    color: var(--text);
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.3s all ease;
+}
+.meal-plan-item:hover .content-box .price{
+    font-size: 30px;
+    line-height: 40px;
+}
+.meal-plan-item .content-box .price .currency{
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 0;
+    position: relative;
+    top: 4px;
+}
+.meal-plan-item .content-box .price .per-day{
+    color: var(--light-text);
+    font-size: 16px;
+    margin-left: -5px;
+    position: relative;
+    top: 3px;
+}
+
+.plan-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.3s all ease;
+}
+.plan-btn .sign{
+    transition: 0.3s all ease;
+}
+.plan-btn .text{
+    color: var(--heading-text);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+.plan-btn:hover .sign{
+    transform: translateX(100px);
+}
+.plan-btn:hover .text{
+    transform: translateX(-50px);
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 0.5px;
+}
+
+
+
+
+
+/* =======================================================================
+    Sample Meal Section CSS
+========================================================================== */
+.sample-meal-sec{
+    padding: 100px 0 70px 0;
+}
+.sample-meal-item{
+    position: relative;
+}
+.sample-meal-item .img-box{
+    background-color: var(--white);
+    position: relative;
+    z-index: 2;
+}
+.sample-meal-item .img-box img{
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    object-position: center center;
+    transition: 0.3s all ease;
+}
+.sample-meal-item:hover .img-box img{
+    transform: scale(1.1);
+}
+.sample-meal-item .content-box{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-50px);
+    transition: 0.3s all ease;
+}
+.sample-meal-item:hover .content-box{
+    transform: translateY(0);
+}
+.sample-meal-item .content-box .title{
+    color: var(--orange);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+/* =======================================================================
+    Easy Section CSS
+========================================================================== */
+.easy-sec{
+    padding: 100px 0 100px 0;
+}
+.sync1 .item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 35px;
+}
+.slider-small-box{
+    width: 90%;
+    margin: 0 auto;
+}
+.sync2 .item .title{
+    color: var(--heading-text);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Mirosa';
+}
+.sync2 .item .title.green{
+    color: var(--green);
+}
+.sync2 .item .title.orange{
+    color: var(--orange);
+}
+.sync2 .item .title.blue{
+    color: var(--blue);
+}
+.sync2 .item .line-green{
+    background: rgb(0,166,81);
+    background: linear-gradient(90deg, rgba(0,166,81,1) 0%, rgba(36,178,105,1) 51%, rgba(0,166,81,0) 100%);
+    width: 150px;
+    height: 4px;
+    border-radius: 100px;
+    display: block;
+    /* margin: 0 auto; */
+    margin-bottom: 20px;
+}
+.sync2 .item .line-orange{
+    background: rgb(247,148,29);
+    background: linear-gradient(90deg, rgba(247,148,29,1) 0%, rgba(248,163,61,1) 51%, rgba(247,148,29,0.006214985994397737) 100%);
+    width: 150px;
+    height: 4px;
+    border-radius: 100px;
+    display: block;
+    /* margin: 0 auto; */
+    margin-bottom: 20px;
+}
+.sync2 .item .line-blue{
+    background: rgb(97,171,252);
+    background: linear-gradient(90deg, rgba(97,171,252,1) 0%, rgba(119,183,252,1) 51%, rgba(97,171,252,0) 100%);
+    width: 150px;
+    height: 4px;
+    border-radius: 100px;
+    display: block;
+    /* margin: 0 auto; */
+    margin-bottom: 20px;
+}
+.sync2 .item .desc{
+    color: var(--heading-text);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-bottom: 0;
+}
+.sync2 .owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sync2 .owl-nav button{
+    color: var(--orange)!important;
+    font-size: 20px!important;
+}
+.sync2 .owl-nav button:hover{
+    background-color: transparent!important;
+    color: var(--orange-dark)!important;
+}
+.sync2 .owl-nav .owl-next{
+    position: relative;
+    right: -35px;
+}
+.sync2 .owl-nav .owl-prev{
+    position: relative;
+    left: -35px;
+}
+
+
+
+
+/* =======================================================================
+    Google Reviews Section CSS
+========================================================================== */
+.reviews-sec{
+    padding: 100px 0 70px 0;
+}
+
+
+/* =======================================================================
+    Blog Section CSS
+========================================================================== */
+.blog-sec{
+    padding: 100px 0 70px;
+}
+
+.blog-item{
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.blog-item.blue{
+    background-color: var(--blue);
+    color: var(--white)!important;
+}
+.blog-item.green{
+    background-color: var(--green-light);
+    color: var(--white)!important;
+}
+.blog-item.purple{
+    background-color: var(--purple);
+    color: var(--white)!important;
+}
+.blog-item .img-box{
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+.blog-item.verticle .img-box{
+    border-radius: 20px 20px 0px 0px;
+}
+.blog-item .img-box img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.3s all ease;
+}
+.blog-item.verticle .img-box img{
+    border-radius: 20px 20px 0px 0px;
+    height: 150px;
+}
+.blog-item:hover .img-box img{
+    transform: scale(1.1);
+}
+.blog-item .content-box{
+    position: relative;
+    padding: 20px 10px;
+}
+.blog-item.verticle .content-box{
+    min-height: 250px;
+    display: grid;
+    align-items: center;
+}
+.blog-item .content-box .title{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 50px;
+}
+.blog-item.verticle .content-box .title{
+    margin-bottom: 30px;
+}
+.blog-item .content-box .tag{
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.blog-item .content-box .btn{
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50rem;
+    padding: 7px 20px;
+}
+.blog-item .content-box .btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* =======================================================================
+    Footer CSS
+========================================================================== */
+footer{
+    padding: 100px 0 0 0;
+}
+.main-footer{
+    padding-bottom: 70px;
+}
+.main-footer .logo-box{
+    margin-bottom: 30px;
+}
+.main-footer .logo-box img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.main-footer .logo-box .desc{
+    color: var(--light-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+.main-footer .link-box{
+    position: relative;
+}
+.main-footer .link-box h2{
+    color: var(--heading-text);
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.main-footer .link-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-footer .link-box ul li{
+    margin-bottom: 15px;
+}
+.main-footer .link-box ul li a{
+    color: var(--heading-text);
+}
+.main-footer .link-box ul li a:hover{
+    color: var(--orange);
+}
+
+.social-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.social-box a{
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 100px;
+    border: 1.5px solid var(--orange);
+    margin-right: 30px;
+    transition: 0.3s all ease;
+}
+.social-box a i{
+    transition: 0.3s all ease;
+}
+.social-box a:hover{
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    background-color: var(--orange);
+}
+.social-box a:hover i{
+    transform: rotate(45deg);
+    color: var(--white);
+}
+
+.footer-bottom{
+    padding: 20px 0;
+}
+.footer-bottom .copy-right-box p{
+    color: var(--heading-text);
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+.footer-bottom .copy-right-box p span{
+    color: var(--orange);
+    text-decoration: underline;
+}
+.footer-bottom .powered-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-bottom .powered-box p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.footer-bottom .powered-box p img{
+    height: 35px;
+    margin-left: 5px;
+}
+.footer-bottom .we-accept-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-bottom .we-accept-box p{
+    color: var(--heading-text);
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.footer-bottom .we-accept-box i{
+    color: var(--green);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+/* =======================================================================
+    Custom ScrollBar CSS
+========================================================================== */
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 7px;
+    height: 4px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--orange);
+}
